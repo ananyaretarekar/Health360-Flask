@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Health360 — Smart healthcare analytics, patient risk and lifestyle insights.">
+  <title>Health360 | Smart Healthcare Analytics</title>
+  <link rel="preconnect" href="https://public.tableau.com">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Health360 home">
+      <span class="brand-mark">H<span>+</span></span>
+      <span class="brand-name">Health<span>360</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#dashboard" class="nav-link">Dashboard</a>
+      <a href="#story" class="nav-link">Story</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> DATA-DRIVEN HEALTH INSIGHTS</span>
+        <h1>Understand health.<br><span>Make informed choices.</span></h1>
+        <p>Explore patient risk factors, lifestyle patterns, and healthcare insights through an interactive analytics experience.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#dashboard">Explore dashboard <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#about">Discover Health360</a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✦</span> Turning healthcare data into clearer insights</div>
+      </div>
+      <div class="hero-art" aria-label="Healthcare analytics illustration">
+        <div class="art-glow"></div>
+        <div class="art-card card-main">
+          <div class="art-card-top"><span>Health overview</span><span class="live-dot">● Live insights</span></div>
+          <div class="art-number">360° <small>perspective</small></div>
+          <div class="mini-bars"><i style="height:35%"></i><i style="height:53%"></i><i style="height:44%"></i><i style="height:72%"></i><i style="height:61%"></i><i style="height:88%"></i><i style="height:68%"></i><i style="height:95%"></i></div>
+          <div class="art-legend"><span><b class="legend-brown"></b>Risk factors</span><span><b class="legend-peach"></b>Lifestyle trends</span></div>
+        </div>
+        <div class="floating-stat stat-one"><span class="stat-symbol">♡</span><div><strong>Patient-first</strong><small>Insights at a glance</small></div></div>
+        <div class="floating-stat stat-two"><span class="stat-symbol stat-symbol-peach">↗</span><div><strong>Explore patterns</strong><small>Across age groups</small></div></div>
+        <div class="art-orbit"></div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <div><span class="strip-icon">⌁</span><p><strong>Explore the data</strong><small>Interactive visualisations</small></p></div>
+      <div><span class="strip-icon">◉</span><p><strong>Spot patterns</strong><small>Risk and lifestyle factors</small></p></div>
+      <div><span class="strip-icon">✧</span><p><strong>Build awareness</strong><small>Insights for better understanding</small></p></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <span class="eyebrow">ABOUT THE PROJECT</span>
+        <h2>Healthcare data, made <span>meaningful.</span></h2>
+        <p>Health360 brings key patient and lifestyle indicators together in one place, helping viewers explore how health patterns can vary across groups.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon">⌕</span><h3>Explore risk factors</h3><p>Review indicators such as BMI category, diabetes, heart disease and stroke in the dashboard.</p></article>
+        <article class="feature-card"><span class="feature-icon">◷</span><h3>Compare age groups</h3><p>Explore differences across age groups and observe how lifestyle indicators are distributed.</p></article>
+        <article class="feature-card"><span class="feature-icon">▦</span><h3>Interact with visuals</h3><p>Use the Tableau filters, charts and story tabs to investigate the available data.</p></article>
+      </div>
+      <p class="disclaimer">Note: This project is for educational and informational purposes only. Visualisations should not be used as medical advice or for individual diagnosis.</p>
+    </section>
+
+    <section class="visual-section" id="dashboard">
+      <div class="section-heading">
+        <span class="eyebrow">EXPLORE THE VISUALISATION</span>
+        <h2>Your healthcare <span>dashboard.</span></h2>
+        <p>Interact with the original Tableau dashboard below. Use its filters and charts to explore the data.</p>
+      </div>
+      <div class="viz-shell">
+        <div class="viz-toolbar"><div><span class="toolbar-dot"></span><span class="toolbar-dot"></span><span class="toolbar-dot"></span></div><span>Health360 · Dashboard</span><a href="https://public.tableau.com/views/Health360ComprehensiveHealthcareRiskDiseaseAnalytics_17929898861220/Dashboard1?:showVizHome=no" target="_blank" rel="noopener noreferrer">Open in Tableau ↗</a></div>
+        <div class="viz-frame dashboard-frame">
+          <iframe title="Health360 Smart Healthcare Risk Factor Analysis Dashboard" src="https://public.tableau.com/views/Health360ComprehensiveHealthcareRiskDiseaseAnalytics_17929898861220/Dashboard1?:language=en-GB&:showVizHome=no&:embed=true" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="visual-section story-section" id="story">
+      <div class="section-heading">
+        <span class="eyebrow">FOLLOW THE STORY</span>
+        <h2>See the story behind <span>the data.</span></h2>
+        <p>Move through the Tableau story to explore patient distribution, fatigue condition, exercise levels, blood pressure, and other health indicators.</p>
+      </div>
+      <div class="viz-shell">
+        <div class="viz-toolbar"><div><span class="toolbar-dot"></span><span class="toolbar-dot"></span><span class="toolbar-dot"></span></div><span>Health360 · Story</span><a href="https://public.tableau.com/views/Health360ComprehensiveHealthcareRiskDiseaseAnalytics_17929898861220/Story1?:showVizHome=no" target="_blank" rel="noopener noreferrer">Open in Tableau ↗</a></div>
+        <div class="viz-frame story-frame">
+          <iframe title="Health360 Smart Healthcare Analytics Story" src="https://public.tableau.com/views/Health360ComprehensiveHealthcareRiskDiseaseAnalytics_17929898861220/Story1?:language=en-GB&:showVizHome=no&:embed=true" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="section-heading">
+        <span class="eyebrow">QUICK ANSWERS</span>
+        <h2>Frequently asked <span>questions.</span></h2>
+        <p>A few details to help you navigate the Health360 experience.</p>
+      </div>
+      <div class="faq-list">
+        <details><summary>What is Health360?</summary><p>Health360 is a healthcare analytics project that presents patient risk and lifestyle insights through interactive Tableau visualisations.</p></details>
+        <details><summary>How do I use the dashboard?</summary><p>Use the interactive controls inside the embedded Tableau view. Depending on the chart, you may be able to select categories, hover for details, or apply filters.</p></details>
+        <details><summary>What is the Story page for?</summary><p>The Story view groups visualisations into a sequence so you can explore different aspects of the dataset step by step.</p></details>
+        <details><summary>Is this medical advice?</summary><p>No. The website is an educational data visualisation project and is not a substitute for advice from a qualified healthcare professional.</p></details>
+        <details><summary>Why is a Tableau visualisation not loading?</summary><p>Check your internet connection and make sure Tableau Public is accessible. You can also use the “Open in Tableau” link above each visualisation.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">H<span>+</span></span><span class="brand-name">Health<span>360</span></span></a>
+    <p>Smart Healthcare Analytics: Patient Risk &amp; Lifestyle Insights</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+    <small>© <span id="year"></span> Health360 · Educational project</small>
+  </footer>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
