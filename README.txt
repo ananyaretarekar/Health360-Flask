@@ -20,4 +20,8 @@ templates/index.html
 static/css/style.css
 static/js/script.js
 
+Tableau Public:
+Live Workbook Link:
+https://public.tableau.com/views/Health360_ComprehensiveHealthcareRiskDiseaseAnalytics_17933764337280/SmartHealthcareAnalyticsPatientRiskLifestyleInsights?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
 An internet connection is needed for Google Fonts and Tableau Public. The original Tableau Dashboard and Story links are embedded, with direct links as a fallback. If Tableau says content is blocked by the owner, Flask cannot override Tableau's embedding permissions; ask the workbook owner to allow embedding or open the views directly.

@@ -6,8 +6,19 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Health360 — Smart healthcare analytics, patient risk and lifestyle insights.">
   <title>Health360 | Smart Healthcare Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://public.tableau.com">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link id="site-stylesheet" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" onerror="this.onerror=null;this.href='../static/css/style.css';">
+  <script>
+    (function() {
+      var link = document.getElementById('site-stylesheet');
+      if (link && link.getAttribute('href').indexOf('{{') !== -1) {
+        link.href = '../static/css/style.css';
+      }
+    })();
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -121,6 +132,16 @@
     <a href="#home" class="back-top">Back to top ↑</a>
     <small>© <span id="year"></span> Health360 · Educational project</small>
   </footer>
-  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <script id="site-script" src="{{ url_for('static', filename='js/script.js') }}" onerror="this.onerror=null;this.src='../static/js/script.js';"></script>
+  <script>
+    (function() {
+      var s = document.getElementById('site-script');
+      if (s && s.getAttribute('src').indexOf('{{') !== -1) {
+        var fallback = document.createElement('script');
+        fallback.src = '../static/js/script.js';
+        document.body.appendChild(fallback);
+      }
+    })();
+  </script>
 </body>
 </html>
